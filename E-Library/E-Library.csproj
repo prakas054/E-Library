@@ -102,17 +102,19 @@
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\BooksController.cs" />
+    <Compile Include="Controllers\IssuedBooksController.cs" />
     <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904300541423_Initial.cs" />
-    <Compile Include="Migrations\201904300541423_Initial.Designer.cs">
-      <DependentUpon>201904300541423_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201904301128035_Initial.cs" />
+    <Compile Include="Migrations\201904301128035_Initial.Designer.cs">
+      <DependentUpon>201904301128035_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\E_LibraryContext.cs" />
+    <Compile Include="Models\IssuedBook.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -129,8 +131,8 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904300541423_Initial.resx">
-      <DependentUpon>201904300541423_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904301128035_Initial.resx">
+      <DependentUpon>201904301128035_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -55,6 +55,15 @@ namespace E_Library.Migrations
                     Address = "Chicago"
                 }
                 );
+
+            context.IssuedBooks.AddOrUpdate(x => x.Id,
+                new IssuedBook() {Id = 1, StudentId = 4, BookId = 1 },
+                new IssuedBook() { Id = 2, StudentId = 2, BookId = 1 },
+                new IssuedBook() { Id = 3, StudentId = 1, BookId = 3 },
+                new IssuedBook() { Id = 4, StudentId = 3, BookId = 2 },
+                new IssuedBook() { Id = 5, StudentId = 4, BookId = 2 }
+                );
+
         }
     }
 }

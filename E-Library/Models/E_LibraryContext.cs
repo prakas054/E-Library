@@ -22,5 +22,7 @@ namespace E_Library.Models
         public System.Data.Entity.DbSet<E_Library.Models.Book> Books { get; set; }
 
         public System.Data.Entity.DbSet<E_Library.Models.Student> Students { get; set; }
+
+        public System.Data.Entity.DbSet<E_Library.Models.IssuedBook> IssuedBooks { get; set; }
     }
 }
